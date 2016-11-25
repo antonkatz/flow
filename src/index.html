@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div id="greeting">
+    <b>nigel</b>, good morning!
+</div>
+
+<div id="panel">
+    <div id="balance"><b>one hour</b>
+        <div class="tag">left to gift friends</div>
+    </div>
+    <div class="small-panels-container">
+        <div class="small-panel event">
+            <div class="title">event feed</div>
+            <ul>
+                <li>
+                    <div class="photo"
+                         style="background-image: url('https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fcreativewebbiz.com%2Fwp-content%2Fuploads%2F2013%2F08%2FYamileAvatarRound1.png&f=1');"></div>
+                    <div class="description">you helped <b>molly</b> for 2 hours</div>
+                </li>
+            </ul>
+        </div>
+        <div id="ask-panel" class="ask-offer small-panel">
+            <div class="title">you ask for help</div>
+            <ul>
+                <li>
+                    <div class="photo"
+                         style="background-image: url('https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fmobilution.io%2Fwp-content%2Fuploads%2F2015%2F11%2Fjuli_round_avatar.png&f=1');"></div>
+                    <div class="name">sarah, the very long name girl</div>
+                    <div class="how-long">1 hour</div><br>
+                    <div class="details">helping with sprouts</div>
+                </li>
+                <li class="clear"></li>
+                <li>
+                    <div class="photo"
+                         style="background-image: url('https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fmobilution.io%2Fwp-content%2Fuploads%2F2015%2F11%2Fjuli_round_avatar.png&f=1');"></div>
+                    <div class="name">fiona</div>
+                    <div class="how-long">1.5 hours</div>
+                </li>
+            </ul>
+        </div>
+        <div id="offer-panel" class="ask-offer small-panel">
+            <div class="title">you offer a hand</div>
+            <ul>
+                <li>
+                    <div class="photo"
+                         style="background-image: url('http://www.britishcolumbia.com/wp-content/uploads/2014/12/BCVacation-British-Columbia-dot-com-avatar_400x400-round-52x50.png');"></div>
+                    <div class="name">tommy</div>
+                    <div class="how-long">2 hours</div>
+                </li>
+                <li>
+                    <div class="photo"
+                         style="background-image: url('https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fthumb101.shutterstock.com%2Fdisplay_pic_with_logo%2F2575537%2F264023393%2Fstock-vector-cute-brown-monkey-cartoon-flat-icon-avatar-round-circle-264023393.jpg&f=1');"></div>
+                    <div class="name">tommy</div>
+                    <div class="how-long">1 hour</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+<!-- Add your site or application content here -->
+<div id="lline-container">
+    <input type="search" class="lline" placeholder="type what you would like to do ...">
+    <div id="suggest-container">
+
+        <div class="suggest-command" style="">
+            <div class="command">
+                <p class="title">lend a hand</p>
+                <p class="usage">to [whom] for [how long] hours</p>
+                <p class="description">spend time with friends, cook them a meal or better yet give a massage</p>
+                <p class="details">details>></p>
+            </div>
+            <div class="command">
+                <p class="title">ask for help</p>
+                <p class="usage">from [whom] for [how long] hours</p>
+                <p class="description">let friends help; rescuing you with a meal or perhaps just ice cream</p>
+                <p class="details">details>></p>
+            </div>
+        </div>
+
+        <div class="suggest-command-params">
+            <p class="title">
+                lend a hand
+            </p>
+            <p class="usage">
+                also known as: give [who] [how long] hours </p>
+            <p class="example">
+                examples: give <b>tim</b> <b>2</b> hours; lend <b>tim</b> a hand for <b>0.5h</b>
+            </p>
+            <div style="clear: both"></div>
+            <p class="param">
+                <input type="text" class="lline" input="to whom?">
+            <div style="clear: both"></div>
+            </p>
+            <p class="param">
+                <input type="text" class="lline" placeholder="how long? (optional)">
+            <div style="clear: both"></div>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

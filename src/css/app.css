@@ -1,0 +1,200 @@
+html {
+    background-color: #171e1f;
+    color: antiquewhite;
+    font-family: "Liberation Sans", sans-serif;
+}
+#greeting{
+    position: relative;
+    font-size: 1.5em;
+}
+b {
+    border-bottom: dotted 1px greenyellow;
+}
+
+/* user panel */
+
+#panel {
+    margin-top: 3em;
+}
+#balance {
+    margin-top: 1em;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+#balance b {
+    font-size: 1.5em;
+    margin-right: 1em;
+    text-shadow: #ff7956 1px 1px 2px 0;
+    display: inline-block;
+}
+#balance .tag {
+    display: inline-block;
+}
+#panel .small-panels-container {
+    padding-top: 1em;
+}
+#panel .small-panel {
+    margin-left: 1.5em;
+    padding: 0 1.5em 0 0;
+    display: inline-block;
+    min-width: 15em;
+    float: right;
+    font-family: "Liberation Sans", sans-serif;
+    /*border-right: 1px dashed rgba(30, 144, 255, 0.36);*/
+}
+#panel .small-panel:first-child {
+    border-right: none;
+    margin-right: 0;
+}
+#panel .small-panel .title {
+    margin-bottom: 0.2em;
+    padding-bottom: 0.1em;
+    font-size: 1.5em;
+    font-family: "Liberation Serif", serif;
+    border-bottom: dashed 1px rgba(100, 149, 237, 0.26);
+    display: block;
+    padding-left: 1em;
+}
+#panel .small-panel ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0.2em;
+}
+#panel .small-panel div, #panel .small-panel li {
+    display: inline-block;
+}
+#panel .small-panel li.clear {
+    display: block;
+    padding: 0;
+}
+#panel .small-panel li:last-child {
+    padding-bottom: 0.5em;
+}
+#panel .small-panel li {
+    width: 100%;
+    padding: 0.5em 0 0 0;
+    line-height: 1.5em;
+}
+#panel .small-panel li div {
+    vertical-align: middle;
+}
+#panel .small-panel li .photo {
+    width: 1.5em;
+    height: 1.5em;
+    float: left;
+    background-size: 1.5em 1.5em;
+}
+#panel .small-panel li .name {
+    margin: 0 1em 0 1em;
+    float: left;
+}
+#panel .ask-offer li .how-long {
+    width: 6em;
+}
+#panel .ask-offer li .how-long, #panel .small-panel li .details {
+    float: right;
+    text-align: right;
+}
+#panel .ask-offer li .details {
+    font-size: 0.8em;
+}
+#panel .event.small-panel li .description {
+    margin-left: 1em;
+}
+
+/* main lLine*/
+
+#lline-container, #panel {
+    position: relative;
+    margin: 0 10% 0 10%;
+    width: 80%;
+}
+#lline-container {
+    padding-top: 5em;
+}
+.lline {
+    height: 2em;
+    font-size: 2em;
+    color: rgba(255, 229, 193, 0.85);
+    width: 100%;
+    border: 1px solid rgba(173, 255, 47, 0.62);
+    border-radius: 4px;
+    margin: auto;
+    background-color: #343b37;
+    box-shadow:  inset 0px -3px 1.5em -0.5em green;
+    padding-left: 1em;
+}
+
+/* suggest */
+
+#suggest-container {
+    border: 1px solid rgba(100, 149, 237, 0.41);
+    width: calc(100% - 2px);
+    border-radius: 4px;
+    margin-top: 0.3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-left-color: rgba(100, 149, 237, 0.16);
+    border-right-color: rgba(100, 149, 237, 0.16);
+    background-color: rgba(0, 0, 255, 0.04);
+}
+#suggest-container .command p {
+    margin: 0;
+}
+
+#suggest-container .command, #suggest-container .suggest-command-params {
+    position: relative;
+    width: calc(46% - 0.9em);
+    margin: 2%;
+    border: 1px solid rgb(100, 149, 237);
+    display: inline-block;
+    padding: 0.3em;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.30);
+}
+#suggest-container .command:hover {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.3) 0%, rgba(0,0,0,0.2) 70%,rgba(125,185,232,0.01) 100%);
+}
+#suggest-container .title, #suggest-container .usage, #suggest-container .example {
+    font-family: "Liberation Mono", monospace;
+    display: inline;
+    margin: 0.5em 0.1em 0 0.1em;
+}
+#suggest-container .example {
+    font-style: italic;
+    display: inline-block;
+}
+#suggest-container .title {
+    font-size: 1.3em;
+    display: inline-block;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    font-weight: bold;
+}
+#suggest-container .command .details {
+    font-size: 0.7em;
+    width: 100%;
+    text-align: right;
+}
+#suggest-container .command .description{
+    display: block;
+    margin:0;
+    text-indent: 1em;
+    padding-top: 0.6em;
+    margin-top: 0.2em;
+    border-top: dashed 1px rgba(100, 149, 237, 0.26);
+}
+
+#suggest-container .suggest-command-params {
+    width: 92%;
+}
+#suggest-container .suggest-command-params p.param {
+    margin-bottom: 1em;
+}
+#suggest-container .suggest-command-params p .lline {
+    float: right;
+    font-size: 1em;
+    text-align: left;
+}
